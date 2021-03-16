@@ -28,5 +28,5 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      // Try to convert MJML to HTML
+      # Try to convert MJML to HTML
        - run: nodejs --version
