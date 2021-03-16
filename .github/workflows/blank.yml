@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [test_main]
+    branches: [develop]
   pull_request:
-    branches: [test_main]
+    branches: [develop]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -32,5 +32,4 @@ jobs:
       // Try to convert MJML to HTML
       - name: 
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          node script.js
