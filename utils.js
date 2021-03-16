@@ -15,4 +15,4 @@ function searchSanitizedStringInArray(string, stringArray) {
   return -1;
 }
 
-export { findMatchingTranslation };
+export { findMatchingTranslation, searchSanitizedStringInArray };
