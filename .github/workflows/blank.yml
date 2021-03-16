@@ -30,6 +30,6 @@ jobs:
         run: echo Hello, world!
 
       // Try to convert MJML to HTML
-      - name: 
+      - name: Convert and push MJML
         run: |
           node main.js
