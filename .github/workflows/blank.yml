@@ -31,5 +31,4 @@ jobs:
 
       // Try to convert MJML to HTML
       - name: Convert and push MJML
-        run: |
-          node main.js
+        run: node main.js
