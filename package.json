@@ -1,0 +1,24 @@
+{
+  "name": "mail-design-system",
+  "version": "1.0.0",
+  "description": "This is a test project aiming to demonstrate how to plugg a multi langual MJML design system to a Mailjet account using Github Actions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nijooke/mail-design-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nijooke/mail-design-system/issues"
+  },
+  "homepage": "https://github.com/Nijooke/mail-design-system#readme",
+  "dependencies": {
+    "mjml": "^4.9.0"
+  },
+  "type": "module"
+}
