@@ -1,4 +1,4 @@
-### Mail Design System
+# Mail Design System
 
 
 ## How to use
@@ -24,7 +24,7 @@ Make sure you have node installed !
 I really enjoyed this test! It was really interesting to work on MJML, something I couldn't do before.
 
 
-# This is how I went about solving this test
+## This is how I went about solving this test
 
 I first looked at how workflows worked on Github to know how I was going to set up my solution.
 Then, I looked at how to use mailjet and how the MJML format worked.
@@ -32,19 +32,19 @@ I then used the mailjet API on POSTMAN to understand how it worked.
 I then implemented Javascript, first by just removing the `mj-text` tags, and then trying to translate
 
 
-# Result :
+## Result :
 
 Project is working when you're running it the first time
 
 
-# Problems : 
+## Problems : 
 
 Problem are :
     - If a template with the same name already exist in Mailjet
     - If there is html in the sentence, example : `Simply created&nbsp;on&nbsp;<a style="color:#ffffff" href="http://www.mailjet.com"><b>Mailjet Passport</b></a>`
 
 
-# What I would have liked to do better
+## What I would have liked to do better
 
 I would have liked :
     - Put in place a **cleaner code** and **better logic**, It can be greatly improved, I rushed a bit when I felt that time was running out
