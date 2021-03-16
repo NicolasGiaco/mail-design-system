@@ -1,5 +1,7 @@
 import axios from "axios";
-// TODO: implement error logic
+import CONFIG from "./config.js";
+
+// TODO: implement error logic et clean code
 
 async function updateExistingTemplate(html, ID) {
   const response = await axios.post(
@@ -13,8 +15,8 @@ async function updateExistingTemplate(html, ID) {
     },
     {
       auth: {
-        username: "ff3ca2010efd61d70273141b9974f699",
-        password: "633aea732872d0753327da7b82d1d826",
+        username: CONFIG.username,
+        password: CONFIG.password,
       },
     }
   );
@@ -35,15 +37,15 @@ async function uploadTemplate(translated_key, html) {
         IsStarred: true,
         IsTextPartGenerationEnabled: true,
         Locale: translated_key,
-        Name: "Transleted " + translated_key,
+        Name: "Translated_" + translated_key,
         OwnerType: "user",
         Presets: "Test",
         Purposes: ["transactional"],
       },
       {
         auth: {
-          username: "ff3ca2010efd61d70273141b9974f699",
-          password: "633aea732872d0753327da7b82d1d826",
+          username: CONFIG.username,
+          password: CONFIG.password,
         },
       }
     );
@@ -52,7 +54,7 @@ async function uploadTemplate(translated_key, html) {
     updateExistingTemplate(html, ID);
   } catch (error) {
     console.error(
-      "An error occured while create template, please make sure there are not already existing in Mailjet"
+      "An error occured while creating template, please make sure a template with the same name isn't in Mailjet"
     );
   }
 }
