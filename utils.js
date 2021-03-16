@@ -1,3 +1,4 @@
+// Get matching translation from mjml template to our translations
 function findMatchingTranslation(string, translations, translations_keys) {
   for (const key of translations_keys) {
     const values = Object.values(translations[key]);
